@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="lib/bootstrap.css"/>
+    <link rel="stylesheet" href="lib/bootstrap.min.css"/>
+
+
+    <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.noty.packaged.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="lib/functions.js"></script>
+    <script src="js/ajaxRequester.js"></script>
+    <script src="js/userSession.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+<body>
+<main id="wrapper">
+    <header><img src="images/telikologo2.png"/></header>
+    <div class="navbar navbar-inverse">
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Начало</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="magic-technologies.html">Катедри</a></li>
+                <li><a href="obucheniq.html">Обучение</a></li>
+                <li><a href="shop.html" id="btnShowAllAdsView">МAГазин</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li></li>
+                <li class="enter"><a href="#" class="button" id="btnShowLoginView">Вход</a></li>
+                <li class="myProfile"><a href="myProfile.html"> Моят профил </a></li>
+                <li class="exit"><a href="#" class="link" id="btnMenuLogout">Изход</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div id="container">
+        <div id="image-slider"><a href="#" class="prev"><img src="images/arrow-left.png" alt=""/></a>
+            <ul>
+                <li><img src="images/slide1.jpg" alt=""/></li>
+                <li><img src="images/slide2.jpg" alt=""/></li>
+                <li><img src="images/slide3.jpg" alt=""/></li>
+            </ul>
+            <a href="#" class="next"><img src="images/arrow-right.png" alt=""/></a>
+        </div>
+    </div>
+    <div class="row" id="study">
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-5">
+
+            <br/><br/>
+
+            <div class="newsTitle">Обучения</div>
+
+            <div class="panel-info">
+                <div>
+
+                    <h3 class="panel-title">
+                        <br/>
+                        Бакалавърски програми
+                    </h3>
+
+                    <div class="sentence">
+                        Нашите бакалавърски програми ще ви дадат много знания за живота, света, Вселената (обобщено
+                        казано - Матемагиката).
+                    </div>
+                    <div class="panel-readmore">
+                        <a href="obucheniq.html#obucheniq" class="readMoreLink">Прочети още</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-info">
+                <div>
+                    <h3 class="panel-title">
+                        Магистърски програми
+                    </h3>
+
+                    <div class="sentence">Те ще ви дават златната възможност да влезете в новините ->
+                    </div>
+                    <div class="panel-readmore">
+                        <a href="obucheniq.html#master" class="readMoreLink">Прочети още</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-info">
+                <div>
+
+                    <h3 class="panel-title">
+                        Катедри
+                    </h3>
+
+                    <div class="sentence">
+                        Усърдната работа на всички катедри подпомага разпространението на Магия отвъд границите на
+                        жълтата сграда.
+                    </div>
+                    <div class="panel-readmore">
+                        <a href="magic-technologies.html" class="readMoreLink">Научи повече</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <br/>
+
+            <div class="newsTitle">Нашите партньори</div>
+            <br/><br/>
+
+            <div class="panel-info">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="images/partner2.png"/>
+                        <img src="images/partner.png"/>
+                        <br/><br/>
+
+                        <div class="col-lg-6">
+                            <img src="images/partner4.gif"/>
+                        </div>
+                        <div class="col-lg-4">
+                            <br/><br/><br/><br/>
+                            <img src="images/partner6.jpg"/>
+                            <br/><br/><br/>
+
+                        </div>
+
+
+                        <img src="images/partner5.jpg"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-5" id="news-view">
+            <br/><br/>
+
+            <div class="newsTitle">Новини</div>
+
+            <div class="panel-info">
+                <div>
+                    <h3 class="panel-title">
+                        Студенти ще ходят пеш! СКГТ официално сваля маската си спирка по спирка из Софийската община
+                    </h3>
+
+                    <div class="sentence">Не, че това не го знаехме, всеки е преживял сутрешния автобусен пик с
+                        население 8 души на квадратен
+                        метър. Студентите ни ще бъдат поощрени чрез..
+                    </div>
+                    <div class="panel-readmore">
+                        <a href="news.html#novina1" class="readMoreLink">Прочети още</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-info">
+                <div>
+                    <h3 class="panel-title">Скандал във Винпром Пещера - безобразието на стажанта Пергел Ибрахимов</h3>
+                </div>
+                <div>
+                    <div class="sentence">
+                        Нищо не е съвсем различно откакто във Винпром Пещера стаж започна..
+                    </div>
+                    <div class="panel-readmore">
+                        <a href="news.html#novina2">Прочети още</a>
+                    </div>
+                </div>
+                <!--
+                <div class="panel-readmore">
+                    <a href="#">Read more...</a>
+                </div>
+                -->
+            </div>
+            <div class="panel-info">
+                <div>
+                    <h3 class="panel-title">Лабораторията по Етанологическо моделиране изобрети кървава гъба</h3>
+                </div>
+                <div class="sentence">
+                    Огромният успех на нашите колеги от катедра Матемагическа етанологика и приложенията й..            </div>
+                <div class="panel-readmore">
+                    <a href="news.html#novina3">Прочети още</a>
+                </div>
+            </div>
+
+
+            <div class="panel-info">
+                <div>
+                    <h3 class="panel-title">Матемагически проблеми</h3>
+                </div>
+                <div class="sentence">
+                    Защо вярваме, че става дума именно за инженерен вандализъм ли...
+                </div>
+                <div class="panel-readmore">
+                    <a href="news.html#novina4">Прочети още</a>
+                </div>
+            </div>
+
+            <div class="panel-info">
+                <div>
+                    <h3 class="panel-title">Униформите - вече задължителни във ФМИ</h3>
+                </div>
+                <div class="sentence">
+                    От 1928 година се обсъжда и гласува въвеждането на униформи, които студентите да носят на
+                    територията на факултета.  Най-накрая постигнахме успех!..
+                </div>
+                <div class="panel-readmore">
+                    <a href="news.html#novina5">Прочети още</a>
+                </div>
+            </div>
+
+
+            <div class="panel-info">
+                <div>
+                    <h3 class="panel-title">Виетнамският ресторант до ФМИ - заключен от властите</h3>
+                </div>
+                <div class="sentence">
+                    Съвсем обаче ни изненада разкритието на полицията...
+                </div>
+                <div class="panel-readmore">
+                    <a href="news.html#novina6">Прочети още</a>
+                </div>
+            </div>
+
+            <div class="panel-info">
+                <div>
+                    <h3 class="panel-title">Матемагиката - вредна за здравето?</h3>
+                </div>
+                <div class="sentence">
+                    Други интересни факти, учени от Неизвестния Университет установиха...
+                </div>
+                <div class="panel-readmore">
+                    <a href="news.html#novina7">Прочети още</a>
+                </div>
+            </div>
+
+            <div class="panel-info">
+                <div>
+                    <h3 class="panel-title">Матемагическа прогресия</h3>
+                </div>
+                <div class="sentence">
+                    Как прогресира оценяването на изпитите по висша Матемагика...
+                </div>
+                <div class="panel-readmore">
+                    <a href="news.html#novina8">Прочети още</a>
+                </div>
+            </div>
+
+            <br/><br/>
+            <img src="images/partner3.png"/>
+
+            <div class="col-lg-7">
+                <img src="images/parner1.jpg"/>
+            </div>
+            <div class="col-lg-5">
+                <img src="images/partner7.jpg"/>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</main>
+<!---end of news tab-->
+
+<!-- Registration screen -->
+<div class="row">
+    <div class="col-lg-3">
+
+    </div>
+    <div class="col-lg-6">
+        <div id="register-form" class="form-group">
+            <h4>Регистрация</h4>
+            <br/>
+
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <label for="txtRegisterUsername">Потребителско име:</label>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" id="txtRegisterUsername"/>
+            </div>
+
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <label for="txtRegisterPassword">Парола:</label>
+            </div>
+            <div class="col-lg-6">
+                <input type="password" id="txtRegisterPassword"/>
+            </div>
+
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <label for="txtRegisterFullName">Име и фамилия:</label>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" id="txtRegisterFullName"/>
+                <br/><br/>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                    <a href="#" class="btn btn-primary" id="btnRegister">Регистрирай се</a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="btn btn-primary" id="btnShowLoginViewFromRegister">Влез</a>
+                </div>
+            </div>
+            </p>
+        </div>
+    </div>
+</div>
+<br/>
+
+<!-- Login screen -->
+<div class="row">
+    <div class="col-lg-3">
+
+    </div>
+    <div class="col-lg-6">
+        <div id="login-form" class="form-group">
+            <h4>Вход</h4>
+            <br/>
+
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <label for="txtLoginUsername">Потребителско име:</label>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" id="txtLoginUsername"/>
+            </div>
+
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <label for="txtLoginPassword">Парола:</label>
+            </div>
+            <div class="col-lg-6">
+                <input type="password" id="txtLoginPassword"/>
+                <br/><br/>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                    <a href="#" class="btn btn-primary" id="btnLogin">Влез</a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="btn btn-primary" id="btnShowRegisterViewFromLogin">Регистрирай се</a>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

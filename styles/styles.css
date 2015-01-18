@@ -1,0 +1,206 @@
+
+.panel a, .panel a:visited, .panel a:hover {
+    text-decoration: none;
+}
+
+.newsTitle {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #396A90;
+    margin-top: 10px;
+}
+
+#readMoreLink {
+    text-align: right;
+}
+
+#image-slider {
+    width: 940px;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+    overflow: visible;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#image-slider .prev {
+    position: absolute;
+    z-index: 3;
+    left: -16px;
+    top: 140px;
+}
+
+#image-slider .next {
+    position: absolute;
+    z-index: 3;
+    right: -24px;
+    top: 140px;
+}
+
+#image-slider ul {
+    position: relative;
+    width: 940px;
+    height: 298px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.form-group {
+    border: 1px solid;
+    border-radius: 7px;
+    background-color: #C4DDF9;
+    margin: 10px 10px 10px 10px;
+    padding: 15px 15px;
+}
+
+h4, h3 {
+    text-align: center;
+}
+
+.teachers4 img, .teachers3 img, .teachers2 img, .teachers1 img {
+    width: 180px;
+    height: 250px;
+    margin-top: 3em;
+    border-radius: 15%;
+    display: inline;
+    text-align: center;
+}
+
+.teachers4, .teachers3, .teachers2, .teachers1 {
+    margin-left: 20px;
+}
+
+.panel-body {
+    text-align: center;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.panel-body2 {
+    background-color: #f6ffea;
+}
+
+.panel {
+    border: 1px;
+    max-width: 95%;
+    margin: auto;
+}
+
+.panel img, .adImg, .image-box img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#adImages {
+    text-align: right;
+}
+
+#adImages img {
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.panel-readmore {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 90%;
+    background-color: white;
+}
+
+div#add-ad-form {
+    border-radius: 5px;
+    color: #3a87ad;
+    background-color: #d9edf7;
+    padding: 20px 20px 20px 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.ad {
+    margin: 5px 5px 5px 5px;
+    padding: 30px 30px 30px 30px;
+    color: #446e9b;
+    background-color: #d9edf7;
+    border: 1.3px solid;
+    border-radius: 5px;
+    border-color: #395c82;
+}
+
+.buttons {
+    text-align: left;
+}
+
+#txtAdTitle, #txtAdText {
+    width: 100%;
+}
+
+.btn-primary {
+    margin: 20px;
+    width: 150px;
+    display: inline-block;
+}
+
+#label1, #label2, #label3 {
+    text-align: right;
+}
+
+.sentence {
+    color: black;
+    font-size: 90%;
+    background-color: white;
+
+}
+
+h3.panel-title {
+    font-size: 115%;
+    color: #3a87ad;
+    background-color: #d9edf7;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+tr.heading, thead {
+    color: #3a87ad;
+    background-color: #d9edf7;
+    font-weight: bold;
+    border: 1px;
+    border-radius: 10px;
+}
+
+#welcome-screen {
+    text-align: center;
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border: 1px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 30px;
+}
+
+.panel-info {
+    border-radius: 8em;
+    margin: 0px;
+}
+
+.panel-heading {
+    margin: 0px;
+}
+
+div.witch {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.witch img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-right: auto;
+    margin-left: auto;
+}

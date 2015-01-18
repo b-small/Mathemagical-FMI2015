@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="lib/bootstrap.css"/>
+    <link rel="stylesheet" href="lib/bootstrap.min.css"/>
+
+
+    <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.noty.packaged.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="lib/functions.js"></script>
+    <script src="js/ajaxRequester.js"></script>
+    <script src="js/userSession.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+<body>
+<main id="wrapper">
+    <header><img src="images/telikologo2.png"/></header>
+    <div class="navbar navbar-inverse">
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li class="active"><a href="magic-technologies.html">Катедри</a></li>
+                <li><a href="obucheniq.html">Обучение</a></li>
+                <li><a href="shop.html" id="btnShowAllAdsView">МАГазин</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li></li>
+                <li class="myProfile"><a href="myProfile.html"> Моят профил </a></li>
+
+                <li class="exit"><a href="#" class="link" id="btnMenuLogout">Изход</a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+<!--end of menu -->
+
+<div id="page">
+    <div id="container">
+
+        <br/><br/>
+
+        <div class="obucheniq">
+            <div class="newsTitle"> Катедри</div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            Джинформагически технологии
+                        </div>
+                        <div class="col-lg-2">
+                            <a id="btnShowTeachers1"> Състав</a>
+                        </div>
+                        <div class="col-lg-3">
+                            Уебсайт на катедрата
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            Изтрезвителни системи
+                        </div>
+                        <div class="col-lg-2">
+                            <a id="btnShowTeachers2"> Състав</a>
+                        </div>
+                        <div class="col-lg-3">
+                            Уебсайт на катедрата
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            Математическа етанологика и приложението й
+                        </div>
+                        <div class="col-lg-2">
+                            <a id="btnShowTeachers3"> Състав</a>
+                        </div>
+                        <div class="col-lg-3">
+                            Уебсайт на катедрата
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            Деферментационни уравнения
+                        </div>
+                        <div class="col-lg-2">
+                            <a id="btnShowTeachers4"> Състав </a>
+                        </div>
+                        <div class="col-lg-3">
+                            Уебсайт на катедрата
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            Концентратен анализ и топлинология
+                        </div>
+                        <div class="col-lg-2">
+                            <a id="btnShowTeachers"> Състав </a>
+                        </div>
+                        <div class="col-lg-3">
+                            Уебсайт на катедрата
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="teachers1">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="images/dr.jpg"/>
+
+                    <p>проф. д-р Стефан Тодолистров </p><br/>
+                </div>
+                <div class="col-lg-4" id="asistent2">
+                    <img src="images/daniAsistent2.jpg"/>
+
+                    <p>гл. ас. Салфетка Пътева</p><br/>
+                </div>
+                <div class="col-lg-4" id="asistent3">
+                    <img src="images/daniAsistent3.jpg"/>
+
+                    <p>гл. ас. Чайка Копривенска-Кютюрева</p><br/>
+                </div>
+            </div>
+        </div>
+
+        <div class="teachers2">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="images/dr.jpg"/>
+
+                    <p>проф. д-р Захарин Тюрингов</p><br/>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/sednimir2.jpg"/>
+
+                    <p>д-р Седимир Ноисипийнев</p><br/>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/bego.jpg"/>
+
+                    <p>гл. ас. Благовеста Неможеда Станоева </p><br/>
+                </div>
+            </div>
+        </div>
+
+        <div class="teachers3">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="images/glo-pich.jpg"/>
+
+                    <p>проф. д-р Гранит Коши-Буняковскиев</p><br/>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/glo.jpg"/>
+
+                    <p>доц. Глория Дяксиметрова</p><br/>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/math-cat.jpg"/>
+
+                    <p>гл. ас. Маца Питагорова </p><br/>
+                </div>
+            </div>
+        </div>
+
+        <div class="teachers4">
+            <div class="row">
+                <div class="col-lg-4" id="daniela">
+                    <img src="images/daniela.jpg"/>
+
+                    <p>доц. Даниела Чобулеваникова</p><br/>
+                </div>
+                <div class="col-lg-4" id="nikolai">
+                    <img src="images/daniDocent.jpg"/>
+
+                    <p>доц. Николай Въртинтегралев</p><br/>
+                </div>
+                <div class="col-lg-4" id="asistent1">
+                    <img src="images/daniAsistent1.jpg"/>
+
+                    <p>гл. ас. Елена Сайдерова</p><br/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--/end #page -->
+</body>
+</html>

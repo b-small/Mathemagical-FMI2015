@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="lib/bootstrap.css"/>
+    <link rel="stylesheet" href="lib/bootstrap.min.css"/>
+    <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.noty.packaged.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="lib/functions.js"></script>
+    <script src="js/ajaxRequester.js"></script>
+    <script src="js/userSession.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+<body>
+<main id="wrapper">
+    <header><img src="images/telikologo2.png"/></header>
+    <div class="navbar navbar-inverse">
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Начало</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="magic-technologies.html">Катедри</a></li>
+                <li><a href="obucheniq.html">Обучение</a></li>
+                <li><a href="shop.html" id="btnShowAllAdsView">МАГазин</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li></li>
+                <li class="myProfile"><a href="myProfile.html"> Моят профил </a></li>
+                <li class="exit"><a href="#" class="link" id="btnMenuLogout">Изход</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--end of menu -->
+</main>
+
+<!-- side menu -->
+<div class="row">
+    <div class="col-lg-2">
+        <br/>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">Профил</h4>
+            </div>
+
+            <a id="btnShowMyAds">
+                <div class="panel-body">
+                    Моите обяви
+                </div>
+            </a>
+
+            <a id="btnMenuAddAd">
+                <div class="panel-body">
+                    Публикувай обява
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- end side menu -->
+
+    <div class="col-lg-10">
+
+        <br/>
+
+        <div id="welcome-screen">
+
+        </div>
+        <!-- add ad form -->
+        <div id="add-ad-form">
+
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2" class="label1">
+                            <br/>
+                            <label>Заглавие:</label>
+                        </div>
+                        <div class="col-lg-5">
+                            <br/>
+                            <input type="text" id="txtAdTitle"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2" class="label2">
+                            <br/>
+                            <label>Текст:</label>
+                        </div>
+                        <div class="col-lg-5">
+                            <br/>
+                            <textarea type="text" id="txtAdText"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2" class="label3">
+                            <br/>
+                            <label>Изображение:</label>
+                        </div>
+                        <div class="col-lg-4">
+                            <br/>
+                            <input type="file" class="image"/>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <br/>
+                        <br/>
+
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-3">
+
+                            <a href="#" class="btn btn-primary" id="btnAddAd">Публикувай</a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="#" class="btn btn-primary" id="">Отмени</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="image-box"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end add ad form -->
+
+        <!-- my ads form -->
+        <div id="my-ads-form">
+            <br/>
+
+            <div class="row">
+                <div class="col-lg-1">
+
+                </div>
+
+                <div class="col-lg-10" id="ads">
+
+                </div>
+            </div>
+        </div>
+        <!-- end my ads form -->
+
+        <!-- edit ad form -->
+        <div id="edit-ad-form">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2" class="label1">
+                            <br/>
+                            <label>Заглавие:</label>
+                        </div>
+                        <div class="col-lg-5">
+                            <br/>
+                            <input type="text" class="txtEditAdTitle"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2" class="label2">
+                            <br/>
+                            <label>Текст:</label>
+                        </div>
+                        <div class="col-lg-5">
+                            <br/>
+                            <textarea type="text" class="txtEditAdText"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <br/>
+                        <br/>
+
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-3">
+
+                            <a href="#" class="btn btn-primary" id="applyEditAd">Промени</a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="myProfile.html" class="btn btn-primary">Отмени</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="image-box"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end edit ad form -->
+    </div>
+</div>
+</body>
+</html>
